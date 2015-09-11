@@ -28,20 +28,20 @@ namespace OSharp.Demo.Contracts
         /// </summary>
         /// <param name="dtos">要添加的角色信息DTO信息</param>
         /// <returns>业务操作结果</returns>
-        OperationResult AddRoles(params NewsDto[] dtos);
+        OperationResult Add(params NewsDto[] dtos);
 
         /// <summary>
         /// 更新角色信息信息
         /// </summary>
         /// <param name="dtos">包含更新信息的角色信息DTO信息</param>
         /// <returns>业务操作结果</returns>
-        OperationResult EditRoles(params NewsDto[] dtos);
+        OperationResult Edit(params NewsDto[] dtos);
 
         /// <summary>
         /// 删除角色信息信息
         /// </summary>
         /// <param name="ids">要删除的角色信息编号</param>
         /// <returns>业务操作结果</returns>
-        OperationResult DeleteRoles(params int[] ids);
+        OperationResult Delete(params int[] ids);
     }
 }

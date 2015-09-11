@@ -447,22 +447,9 @@
     <Content Include="packages.config">
       <SubType>Designer</SubType>
     </Content>
-    <Content Include="Areas\Admin\Views\web.config" />
-    <Content Include="Areas\Admin\Views\Shared\_Layout.cshtml" />
-    <Content Include="Areas\Admin\Views\Home\Index.cshtml" />
-    <Content Include="Areas\Admin\Views\Home\Welcome.cshtml" />
-    <Content Include="Areas\Admin\Views\Users\Index.cshtml" />
-    <Content Include="Areas\Admin\Views\Shared\_DataGridLayout.cshtml" />
-    <Content Include="Areas\Admin\Views\Roles\Index.cshtml" />
-    <Content Include="Areas\Admin\Views\Organizations\Index.cshtml" />
-    <Content Include="Areas\Admin\Views\Shared\_TreeGridLayout.cshtml" />
     <Content Include="OSharp.Keys.snk" />
     <Content Include="log4net.config" />
     <Content Include="osharp.config" />
-    <Content Include="Areas\Admin\Views\Logging\OperateLogs.cshtml" />
-    <Content Include="Areas\Admin\Views\Logging\SystemLogs.cshtml" />
-    <Content Include="Areas\Admin\Views\Functions\Index.cshtml" />
-    <Content Include="Areas\Admin\Views\EntityInfos\Index.cshtml" />
     <None Include="Properties\PublishProfiles\OSharp.Demo.Web.pubxml" />
     <None Include="Properties\PublishProfiles\osharp.pubxml" />
     <None Include="Scripts\jquery-1.11.3.intellisense.js" />
@@ -507,18 +494,6 @@
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Areas\Admin\AdminAreaRegistration.cs" />
-    <Compile Include="Areas\Admin\Controllers\AdminBaseController.cs" />
-    <Compile Include="Areas\Admin\Controllers\HomeController.cs" />
-    <Compile Include="Areas\Admin\Controllers\Identity\OrganizationsController.cs" />
-    <Compile Include="Areas\Admin\Controllers\Identity\RolesController.cs">
-      <SubType>Code</SubType>
-    </Compile>
-    <Compile Include="Areas\Admin\Controllers\Identity\UsersController.cs">
-      <SubType>Code</SubType>
-    </Compile>
-    <Compile Include="Areas\Admin\Controllers\Security\EntityInfosController.cs" />
-    <Compile Include="Areas\Admin\Controllers\Security\FunctionsController.cs" />
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\TestsController.cs">
@@ -565,7 +540,7 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Areas\Admin\Controllers\Systems\" />
+    <Folder Include="Areas\" />
     <Folder Include="Views\Account\" />
     <Folder Include="Views\Tests\" />
   </ItemGroup>

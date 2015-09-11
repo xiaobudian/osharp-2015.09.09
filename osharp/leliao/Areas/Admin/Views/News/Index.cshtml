@@ -1,0 +1,207 @@
+﻿@model IEnumerable<leliao.web.Models.News>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.link)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.faceUrl43)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.faceUrl)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.canPraise)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.canComment)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.canShare)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.UserId)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.recommendOrder)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.topOrder)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.status)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.deleted)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.istop)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.recommend)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.description)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.praise)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.source)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.newsTime)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.preAuditTime)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.auditTime)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Creator)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Auditor)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.DeleteBy)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.AuditSuggestion)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.CreatedTime)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.DissertationId)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.title)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.content)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.topicOrder)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.pv)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.isActive)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.link)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.faceUrl43)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.faceUrl)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.canPraise)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.canComment)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.canShare)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.UserId)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.recommendOrder)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.topOrder)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.status)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.deleted)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.istop)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.recommend)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.description)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.praise)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.source)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.newsTime)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.preAuditTime)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.auditTime)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Creator)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Auditor)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.DeleteBy)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.AuditSuggestion)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.CreatedTime)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.DissertationId)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.title)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.content)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.topicOrder)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.pv)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.isActive)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { /* id=item.PrimaryKey */ }) |
+            @Html.ActionLink("Details", "Details", new { /* id=item.PrimaryKey */ }) |
+            @Html.ActionLink("Delete", "Delete", new { /* id=item.PrimaryKey */ })
+        </td>
+    </tr>
+}
+
+</table>
