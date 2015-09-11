@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<osharp xmlns="http://file.66soft.net/downloads/schemas/osharp.xsd">
+  <data>
+    <contexts>
+      <!--默认上下文配置-->
+      <context name="default" enabled="true" dataLoggingEnabled="false" connectionStringName="default" type="OSharp.Core.Data.Entity.DefaultDbContext, OSharp.Core.Data.Entity">
+        <initializer type="OSharp.Core.Data.Entity.DefaultDbContextInitializer, OSharp.Core.Data.Entity" mapperFiles="$rootnamespace$" />
+      </context>
+      <!--数据日志上下文配置-->
+      <!--<context name="logging" enabled="false" dataLoggingEnabled="false" connectionStringName="logging" type="OSharp.Core.Data.Entity.Logging.LoggingDbContext, OSharp.Core.Data.Entity">
+        <initializer type="OSharp.Core.Data.Entity.Logging.LoggingDbContextInitializer, OSharp.Core.Data.Entity" mapperFiles="OSharp.Core.Data.Entity" />
+      </context>-->
+    </contexts>
+  </data>
+  <logging>
+    <!--日志入口配置，决定记录日志的行为-->
+    <entry enabled="true" level="Debug" />
+    <!--数据日志输出配置-->
+    <data enabled="false" level="Info" type="OSharp.Core.Data.Entity.Logging.DatabaseLoggerAdapter, OSharp.Core.Data.Entity" />
+    <!--基础日志输出配置-->
+    <basic>
+      <adapters>
+        <adapter name="log4net" enabled="true" type="OSharp.SiteBase.Logging.Log4NetLoggerAdapter, OSharp.SiteBase" />
+      </adapters>
+    </basic>
+  </logging>
+</osharp>

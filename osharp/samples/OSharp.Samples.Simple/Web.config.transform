@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<configuration>
+  <configSections>
+    <!--使用外部配置OSharp-->
+    <!--<section name="osharp" type="OSharp.Core.Configs.ConfigFile.OSharpFrameworkSection, OSharp.Core, Version=3.0.0.0, Culture=neutral" />-->
+  </configSections>
+  <connectionStrings>
+    <add name="default" connectionString="Data Source=.; Integrated Security=True; Initial Catalog=$rootnamespace$; Pooling=True; MultipleActiveResultSets=True;" providerName="System.Data.SqlClient"/>
+  </connectionStrings>
+  <!--使用外部配置OSharp-->
+  <!--<osharp configSource="osharp.config"/>-->
+</configuration>
